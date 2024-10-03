@@ -59,7 +59,16 @@ $(document).ready(function() {
             .fail(function(data){
                 resposta = { "erro": "true"}
             })
-        } 
+        } else{
+            $("input[name=rua]").removeProp("disabled");
+            $("input[name=rua]").val("");
+            $("input[name=bairro]").removeProp("disabled");
+            $("input[name=bairro]").val("");
+            $("input[name=cidade]").removeProp("disabled");
+            $("input[name=cidade]").val("");
+            $("input[name=estado]").val("");
+            
+        }
     });
 
     $('#estado').on('change', function() {
