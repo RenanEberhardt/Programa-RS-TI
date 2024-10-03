@@ -42,14 +42,23 @@ $(document).ready(function() {
                     $("input[name=cep]").addClass("is-invalid");
                 }else{
                     $("input[name=rua]").val(resposta.logradouro);
+                    if(resposta.logradouro !== ""){
+                        $("input[name=rua]").prop("disabled", "disabled")
+                    }
                     $("input[name=bairro]").val(resposta.bairro);
+                    if(resposta.bairro !== ""){
+                        $("input[name=bairro]").prop("disabled", "disabled")
+                    }
                     $("select[name=estado]").val(resposta.uf);
                     $("select[name=estado]").trigger("change");
-                    $("input[name=complemento]").val(resposta.complemento);
+                    $("select[name=estado]").prop("disabled", "disabled");
+                    $("select[name=cidade]").prop("disabled", "disabled");
                 }
                 
-            });
-            
+            })
+            .fail(function(data){
+                resposta = { "erro": "true"}
+            })
         } 
     });
 
