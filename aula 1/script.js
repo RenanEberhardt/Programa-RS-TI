@@ -60,13 +60,14 @@ $(document).ready(function() {
                 resposta = { "erro": "true"}
             })
         } else{
-            $("input[name=rua]").removeProp("disabled");
+            $("input[name=rua]").prop("disabled", false);
             $("input[name=rua]").val("");
-            $("input[name=bairro]").removeProp("disabled");
+            $("input[name=bairro]").prop("disabled", false);
             $("input[name=bairro]").val("");
-            $("input[name=cidade]").removeProp("disabled");
-            $("input[name=cidade]").val("");
-            $("input[name=estado]").val("");
+            $("select[name=cidade]").prop("disabled", false);
+            $("select[name=cidade]").val("");
+            $("select[name=estado]").prop("disabled", false);
+            $("select[name=estado]").val("");
             
         }
     });
