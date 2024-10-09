@@ -32,6 +32,15 @@ $(document).ready(function(){
     $("#bt3").on("click", function(event){
         $.getJSON("./data3.json", function(data){
             
+            for(var i in data.results){
+                $("#resultado3").append("Gênero: " +data.results[i].gender + "<br>");
+                $("#resultado3").append("Nome: " + data.results[i].name.first + " ");
+                $("#resultado3").append(data.results[i].name.last + "<br>");
+                $("#resultado3").append("Email: " + data.results[i].email + "<br>");
+            }
+
+            $("#resultado3").append("Info: " + data.info.seed);
+            
         });
     });
 
