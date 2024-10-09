@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
     $("#bt2").on("click", function(event){
         $.getJSON("./data2.json", function(data){
-            $("#resultado2").append(data.name + " " + data.age + " anos:" "<br>");
+            $("#resultado2").append(data.name + " " + data.age + " anos:" + "<br>");
             
             
             for(var i in data.friends){

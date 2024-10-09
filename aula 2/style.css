@@ -6,12 +6,12 @@ body {
 .resultado {
     padding: 10px;
     border-radius: 5px;
-    background-color: #495057;
+    background-color: #081b2f;
     margin-top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .card {
-    background-color: #343a40;
+    background-color: #304b66;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
