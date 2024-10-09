@@ -1,4 +1,6 @@
 {
+    "name": "John",
+    "age": 30,
     "friends": [{
         "firstName": "Mike",
         "lastName": "Jones"
