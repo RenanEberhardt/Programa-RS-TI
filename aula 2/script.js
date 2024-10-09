@@ -10,6 +10,10 @@ $(document).ready(function(){
             $("#resultado1").append("<br>");
         });
     });
+
+///// //////////////////// EXEMPLO 2 AMIGOS ///////////////////////
+
+
     $("#bt2").on("click", function(event){
         $.getJSON("./data2.json", function(data){
             $("#resultado2").append(data.name + " " + data.age + " anos:" + "<br>");
@@ -23,7 +27,22 @@ $(document).ready(function(){
         });
     });
 
-    
+///// //////////////////// EXEMPLO 3 ///////////////////////
+
+    $("#bt3").on("click", function(event){
+        $.getJSON("./data3.json", function(data){
+            
+        });
+    });
+
+
+
+
+
+
+
+
+   /// Botões LIMPAR 
     
     $("#limpar").on("click", function(event){
         $("div[id^=resultado]").empty();
@@ -31,6 +50,10 @@ $(document).ready(function(){
     
     $("#limpar2").on("click", function(event){
         $("div[id^=resultado2]").empty();
+    });
+
+    $("#limpar3").on("click", function(event){
+        $("div[id^=resultado3]").empty();
     });
     
 });
