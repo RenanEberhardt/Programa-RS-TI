@@ -1,30 +1,21 @@
 body {
-    background-color: #ffeef0; /* fundo suave */
-    font-family: Arial, sans-serif;
+    background-color: #f8d7da; /* Fundo claro */
 }
-.container {
-    margin-top: 20px;
+header {
+    background-color: #c82333; /* Vermelho escuro */
 }
-.table-header {
-    background-color: #c82333; /* vermelho escuro */
+footer {
+    background-color: #bd2131; /* Vermelho escuro mais forte */
+}
+table {
+    border-radius: 0.5rem; /* Bordas arredondadas na tabela */
+    overflow: hidden; /* Para aplicar o efeito de borda arredondada */
+    border-color: rgb(255, 0, 93);
+}
+th {
+    background-color: #dc3545; /* Vermelho mais claro para cabeçalhos */
     color: white;
 }
-.profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-.profile-pic:hover {
-    transform: scale(1.1);
-}
-h1 {
-    color: #721c24; /* vermelho escuro */
-}
-.table tbody tr {
-    transition: background-color 0.3s;
-}
-.table tbody tr:hover {
-    background-color: #f5c6cb; /* rosa claro */
+tbody tr:hover {
+    background-color: #f5c6cb; /* Efeito hover nas linhas */
 }
