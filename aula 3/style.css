@@ -1,21 +1,20 @@
 body {
-    background-color: #f8d7da; /* Fundo claro */
+    background-color: #e9f7ef; /* Fundo claro */
 }
 header {
-    background-color: #c82333; /* Vermelho escuro */
+    background-color: #106524; /* Verde escuro */
 }
 footer {
-    background-color: #bd2131; /* Vermelho escuro mais forte */
+    background-color: #011004; /* Verde escuro mais forte */
 }
 table {
     border-radius: 0.5rem; /* Bordas arredondadas na tabela */
     overflow: hidden; /* Para aplicar o efeito de borda arredondada */
-    border-color: rgb(255, 0, 93);
 }
 th {
-    background-color: #dc3545; /* Vermelho mais claro para cabeçalhos */
+    background-color: #34d058; /* Verde mais claro para cabeçalhos */
     color: white;
 }
 tbody tr:hover {
-    background-color: #f5c6cb; /* Efeito hover nas linhas */
+    background-color: #c3e6cb; /* Efeito hover nas linhas */
 }
